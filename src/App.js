@@ -4,6 +4,7 @@ import Pantalla from './componentes/Pantalla'
 import BotonClear from './componentes/BotonClear'
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
+import swal from "sweetalert";
 
 function App() {
 
@@ -17,7 +18,12 @@ function App() {
     if (input) {
       setInput(evaluate(input));
     } else {
-      alert("please enter a correct value");
+      swal({
+        title: "Please",
+        text: "Enter a correct value",
+        icon: "error",
+        button: "Ok"
+    });
     }
   };
 
