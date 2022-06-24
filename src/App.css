@@ -1,6 +1,7 @@
 .App {
   height: 100vh;
   padding-top: 10px;
+  padding-bottom: 15px;
   background-color: #F63D82;
   font-family: Lato, sans-serif;
   display: flex;
